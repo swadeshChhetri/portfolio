@@ -1,0 +1,142 @@
+
+.portfolio-container {
+  position: relative;
+  padding: 20px;
+  background: #fff; 
+  text-align: center;
+}
+.portfolio-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.portfolio-container p {
+  font-size: 1.2em;
+}
+.portfolio-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.home-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+span {
+  color: var(--main-color);
+}
+.home-content {
+  margin-top: 2rem;
+}
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-img {
+  width: 21vw;
+  border-radius: 80%;
+  float: right;
+  animation: floatImage 3.8s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.social-media {
+  margin-left: 1rem;
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  background: transparent;
+  border: 2px solid #87cefa;
+  border-radius: 1rem;
+  margin: 6rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--snd-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.social-media i {
+  font-size: 2rem;
+    margin-left: 1rem;
+    color: #1e90ff;
+}
+
+@media screen and (max-width: 992px){
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 576px) {
+  .home-img {
+    width: 19vw;
+  }
+  .home-content {
+    margin-top: 9rem;
+  }
+  .home-content h3 {
+    font-size: 1.6rem;
+    font-weight: 650;
+  }
+  .home-content h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .social-media a {
+    margin: 4rem 0.2rem 2rem 0;
+    transition: 0.5s ease;
+  }
+  .social-media i {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 365px){
+  .home-content h1 {
+    font-size : 1.9rem;
+  }
+  .home-content h3 {
+  font-size: 1.2rem;
+}
+.social-media a {
+  margin: 2rem 0.2rem 2rem 0;
+}
+}

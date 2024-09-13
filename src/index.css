@@ -1,68 +1,102 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --bg-color: #191f36;
+  --snd-bg-color: #262b40;
+  --text-color: #fff;
+  --main-color: #59b2f4;
+}
+#root {
+  background-color: #b5ebf8;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: green; 
+
+section {
   min-height: 100vh;
+  padding: 1rem 8% 1rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.btnn {
+  font-size: 13px;
+  display: inline-block;
+  padding: 0.7em 2em;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin: 60px 20px 20px 0px;
+  background-color: #00bfff;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.btnn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  border-radius: 1rem;
+  content: " ";
+  background-color: #ff4da6;
+  z-index: -1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.btnn:hover,
+.btnn:focus {
+  color: white;
+}
+
+.btnn:hover::before,
+.btnn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btnn:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .btnn {
+    margin: 2rem 1rem 2rem 0rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
   }
-  a:hover {
-    color: #747bff;
+  .about h2,
+  .expertises h2,
+  .contact h2,
+  .project h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
 }

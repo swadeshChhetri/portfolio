@@ -1,0 +1,44 @@
+
+
+.footer {
+  margin-top: 3rem;
+  background-color: #001133;
+  color: white;
+}
+.quick{
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+}
+.quick a{
+  margin-top: 1rem
+}
+
+.contact {
+  margin-top: 5.5rem;
+  
+}
+
+ i {
+  margin-right: 1rem;
+}
+
+.Social a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+
+}
+p {
+  font-size: 1.5rem;
+  opacity:0.84 ;
+  margin: 1.5rem 0 0 0;
+}
+
+h4{
+opacity:0.84 ;
+margin: 2rem 0 0 0;
+}
+

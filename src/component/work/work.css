@@ -1,0 +1,122 @@
+.project h2 {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.project-container .project-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.project-box img {
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0.7;
+}
+
+.project-box:hover img {
+  transform: scale(1.1);
+}
+.project-box .project-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+  visibility: hidden;
+}
+
+.project-box:hover .project-layer {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.project-layer h4 {
+  font-size: 2rem;
+}
+
+.project-layer p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.project-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.project-layer a i {
+  font-size: 2rem;
+  color: var(--snd-bg-color);
+}
+
+@media screen and (max-width: 925px){
+  .project-layer h4 {
+    font-size: 1.7rem;
+}
+.project-layer p {
+  font-size: 0.9rem;
+}
+  
+}
+
+@media screen and (max-width: 768px) {
+  .project-layer p {
+    font-size: 0.8rem;
+}
+.project-layer h4 {
+  font-size: 1.2rem;
+}
+.project-container {
+  gap: 1.5rem;
+}
+.project-box .project-layer {
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 615px){
+  .project-container .project-box {
+    width: 120%;
+}
+.project-container {
+  gap: 4rem ;
+  width: 100%;
+}
+}
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .project-container {
+    display: block;
+    padding: 3rem;
+  }
+  .project-container .project-box {
+    margin-bottom: 4rem;
+    width: 90%;
+  }
+}
