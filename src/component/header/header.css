@@ -27,10 +27,10 @@
 
 .navbar a {
   color: white;
-    font-size: 1.6rem;
-    font-weight: 480;
-    margin-left: 7rem;
-    text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 480;
+  margin-left: 7rem;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -55,6 +55,13 @@
 
 .nav-link:hover:after {
   width: 100%;
+  color: red;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  /* color: var(--bs-nav-link-hover-color); */
+  color: #ff3c78 !important;
 }
 
 .nav-link a.active {

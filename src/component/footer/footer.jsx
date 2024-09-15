@@ -6,39 +6,39 @@ const Footer = () => {
     <div className="footer">
       <section>
         <div className="footer">
-          <h1><i className="bi bi-person-fill-check"></i>Swadesh's Portfolio</h1>
+          <div className="about">
+          <h1>
+            <i className="bi bi-person-fill-check"></i>Swadesh's Portfolio
+          </h1>
           <p>
-            Thank you for visiting my personal website. Connect with me over
+            Thank you for visiting my personal website. <br /> Connect with me over
             socials.
           </p>
           <br />
           <p>Keep Rising. Connect with me over live chat!</p>
+          </div>
           <div className="quick">
             <h1>Quick Links</h1>
-            <Link to="#">
+            <Link to="home">
               <i className="bi bi-arrow-right-square-fill"></i>
               Home
             </Link>
-            <Link to="#">
+            <Link to="about">
               <i className="bi bi-arrow-right-square-fill"></i>
               About
             </Link>
-            <Link to="#">
+            <Link to="expertises">
               <i className="bi bi-arrow-right-square-fill"></i>
               Skills
             </Link>
-            <Link to="#">
-              <i className="bi bi-arrow-right-square-fill"></i>
-              Education
-            </Link>
-            <Link to="#">
+            <Link to="project">
               <i className="bi bi-arrow-right-square-fill"></i>
               Work
             </Link>
-            <Link to="#">
+            <Link to="certification">
               <i className="bi bi-arrow-right-square-fill"></i>
-              Experience
-            </Link >
+              Certification
+            </Link>
           </div>
           <div className="contact">
             <h1>Contact Info</h1>
@@ -52,6 +52,7 @@ const Footer = () => {
             <h4>
               <i className="bi bi-geo-alt-fill"></i>Bengaluru, India-560022
             </h4>
+          </div>
           </div>
           <div className="Social">
             <a href="">
@@ -72,7 +73,7 @@ const Footer = () => {
           </div>
           <hr />
           <p>Designed with 💌 By Swadesh Chhetri</p>
-        </div>
+      
       </section>
     </div>
   );

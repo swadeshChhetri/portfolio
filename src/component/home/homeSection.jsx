@@ -5,18 +5,21 @@ import Typed from "typed.js";
 import { Link } from "react-scroll";
 
 const HomeSection = () => {
+  const typedElement = useRef(null);
   useEffect(() => {
-    const typed = new Typed(".multiple-text", {
+    const options = {
       strings: ["Web Designer", "Front-End Developer", "React Developer"],
       typeSpeed: 60,
       backSpeed: 60,
       backDelay: 1000,
       loop: true,
-    });
+    };
+      const typed = new Typed(typedElement.current, options);
+    
     return () => {
       typed.destroy();
     };
-  });
+  },[]);
   return (
     <>
     <AnimatedBackground >
@@ -27,21 +30,18 @@ const HomeSection = () => {
             alt="profile image"
             className="home-img"
           />
-          <h3>Hi,Myself</h3>
+          <h3>Hi, I'M</h3>
 
           <h1>Swadesh Chhetri</h1>
 
           <div className="image-container">
             <h3>
-              And I'm a <span className="multiple-text"></span>
+              And I'm a <span className="multiple-text" ref={typedElement}></span>
             </h3>
           </div>
           <div className="social-media">
             <a href="https://www.facebook.com/swadesh.chhetri.1/">
               <i className="bi bi-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="bi bi-twitter"></i>
             </a>
             <a href="https://www.instagram.com/swadesh.85/">
               <i className="bi bi-instagram"></i>
@@ -51,9 +51,6 @@ const HomeSection = () => {
             </a>
             <a href="">
               <i className="bi bi-github"></i>
-            </a>
-            <a href="">
-              <i className="bi bi-whatsapp"></i>
             </a>
           </div>
           <a

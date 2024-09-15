@@ -3,7 +3,7 @@ import "./certificate.css";
 
 const Certification = () => {
   return (
-    <section style={{ marginTop: "8rem" }}>
+    <section style={{ marginTop: "8rem" }} id="certification">
       <h2 style={{ fontSize: "3rem" }}>
         <i className="bi bi-award-fill"></i>Certifi<span>Cation</span>
       </h2>
@@ -44,6 +44,12 @@ const Certification = () => {
                 data-bs-slide-to="3"
                 aria-label="Slide 4"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active" data-bs-interval="10000">
@@ -57,6 +63,9 @@ const Certification = () => {
               </div>
               <div className="carousel-item">
                 <img src="img/4JCC.jpg" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src="img/TC.jpg" className="d-block w-100" alt="..." />
               </div>
             </div>
             <button

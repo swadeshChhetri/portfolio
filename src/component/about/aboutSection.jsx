@@ -24,9 +24,7 @@ const AboutSection = () => {
               ABOUT<span>Me</span>
             </h2>
             <p>
-              My name is Swadesh Chhetri, and I am currently residing in
-              Yeshwantpur. I hold a Bachelor's degree in Literature with honors,
-              where I secured the second position in my college. I am skilled in
+              I'm Swadesh Chhetri,I am skilled in
               HTML, CSS, JavaScript, Bootstrap, React + Redux, Java, and Git for
               version control. I have also earned certifications in Java and
               coding from a computer training center, and in HTML, CSS, and

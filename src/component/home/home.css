@@ -75,7 +75,6 @@ span {
 .social-media a {
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   width: 3.2rem;
   background: transparent;
   border: 2px solid #87cefa;
