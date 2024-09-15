@@ -11,7 +11,7 @@ const ContactSection = () => {
         Let's<span>Connect</span>
       </h2>
       <div className="box">
-        <div>
+        <div className="svg">
           <Lottie
             animationData={Contact}
             data-aos="fade-right"

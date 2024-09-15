@@ -49,11 +49,18 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
+  .svg {
+    display: none;
+}
   
 }
 
 @media screen and (max-width: 576px) {
+  .home-content h3 {
+    font-size: 2.4rem;
+}
+}
   .contact form {
     max-width: 100%;
     margin: 0;
@@ -64,4 +71,13 @@
   .contact form textarea {
     font-size: 1.3rem;
   }
+  .certificate {
+   
+  padding: 4rem 0% !important;
+}
+  
+
+.contact form {
+  margin: 2rem;
+}
 }
