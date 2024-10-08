@@ -1,0 +1,112 @@
+.contact h2 {
+  margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+.contact form {
+    margin: 2rem 3rem 2rem 4rem !important;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    /* margin: 2rem;*/
+}
+
+
+
+.box {
+  background-color: #f2f7fd;
+  border-radius: 4rem;
+  display: flex;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+     width: 100%; 
+    padding: 1rem;
+    /* font-size: 1.6rem; */
+    /* color: black; */
+    background: #F8F9FA;
+    border: none;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    /* color: white;*/
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+button i {
+  margin-left: 5px;
+}
+
+
+/* @media screen and (max-width: 830px) {
+  .svg {
+    display: none;
+}
+  
+}
+
+@media screen and (max-width: 576px) {
+  .home-content h3 {
+    font-size: 2.4rem;
+}
+}
+  .contact form {
+    max-width: 100%;
+    margin: 0;
+  }
+  .contact form .input-box input {
+    font-size: 1.3rem;
+  }
+  .contact form textarea {
+    font-size: 1.3rem;
+  }
+  .certificate {
+   
+  padding: 4rem 0% !important;
+}
+  
+
+.contact form {
+  margin: 2rem;
+} */
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 834px){
+
+}
+@media screen and (max-width: 770px){
+  form .btnn {
+    padding: 0.5rem !important;
+    margin: 13px 23px 6px 76px !important;
+}
+  .foot-container {
+    padding: 1rem !important;
+
+}
+.foot-container h1 {
+  font-size: 21px !important;
+}
+}
+@media screen and (max-width: 480px){
+
+}
+
+
+
+

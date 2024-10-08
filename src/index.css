@@ -17,7 +17,7 @@
   --main-color: #59b2f4;
 }
 #root {
-  background-color: #b5ebf8;
+  background-color: #fff;
 }
 
 body,
@@ -25,10 +25,21 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   width: 100%;
- 
+  color: #6c757d;
 }
+h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2:after {
+  content: url(img/h2-underline.png);
+  display: block;
+  margin-top: -15px;
+} 
+
+
 section {
-  min-height: 100vh;
   padding: 1rem 8% 1rem;
   margin-bottom: 2rem;
   position: relative;
@@ -44,13 +55,13 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   text-decoration: none;
-  transition: 0.3s ease all;
+  /* transition: 0.3s ease all; */
   z-index: 1;
   margin: 60px 20px 20px 0px;
-  background-color: #1abc9c;
+  background-color: #2196F3 ;
 }
 
-.btnn:before {
+/* .btnn:before {
   transition: 0.5s all ease;
   position: absolute;
 
@@ -60,14 +71,14 @@ section {
   bottom: 0;
   opacity: 0;
   border-radius: 1rem;
-  content: " ";
+  content:"";
   background-color: #16a085;
   z-index: -1;
-}
+} */
 
 .btnn:hover,
 .btnn:focus {
-  color: white;
+  background-color: #038bfb;
 }
 
 .btnn:hover::before,
@@ -83,15 +94,15 @@ section {
 }
 
 h2 {
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  font-weight: 800;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .btnn {
     margin: 2rem 1rem 2rem 0rem;
     padding: 0.6rem;
@@ -104,4 +115,4 @@ h2 {
     margin-top: 3rem;
     font-size: 2rem;
   }
-}
+} */

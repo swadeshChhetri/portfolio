@@ -1,0 +1,134 @@
+.navBar {
+   width: 100%;
+   padding: 1rem;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-around;
+   position: fixed;
+   z-index: 9;
+}
+
+.logo-container {
+  height: 50px; /* Adjust logo size */
+}
+.logo{
+  width: 18%;
+}
+.desktopMenu {
+  padding: 0.9rem;
+  display: flex;
+}
+
+.desktopMenu a {
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 3rem;
+    text-decoration: none;
+}
+
+.desktopMenuListItem {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.mobMenu {
+  font-size: 42px;
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+  cursor: pointer; 
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem; 
+  right: 2rem; 
+  z-index: 100; 
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: black; 
+  border-radius: 1rem;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  color: red;
+}
+
+.nav-link:hover,
+.active,
+.nav-link:focus {
+   color: var(--bs-nav-link-hover-color); 
+   color: #f20d06  !important;
+}
+
+.desktopMenuBtn {
+  color: #fff;
+  border: 1px solid #f20d06;
+  border-radius: 6px;
+  padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+  background: #f4312a;
+  font-size: 15px;
+  font-weight: 800;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.listItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  text-decoration: none; 
+}
+@media screen and (max-width: 720px) {
+  .mobMenu {
+    display: flex; 
+  }
+  .desktopMenu {
+    display: none; 
+  }
+  .desktopMenuBtn {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 834px){
+  .logo {
+    width: 28%;
+}
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+
+}
+
+
+

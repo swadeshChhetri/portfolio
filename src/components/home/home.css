@@ -1,0 +1,173 @@
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.home-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+span {
+  color: #ffa914;
+}
+.home-content {
+  margin-top: 2rem;
+}
+.home-content h1 {
+  color: rgb(5, 96, 183);
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-img {
+  width: 21vw;
+  border-radius: 80%;
+  float: right;
+  animation: floatImage 3.8s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.social-media {
+  margin-left: 1rem;
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  width: 3.2rem;
+  background: transparent;
+  border: 2px solid #87cefa;
+  border-radius: 1rem;
+  margin: 6rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  color: var(--snd-bg-color);
+  background-color:#64bdf5;;;
+}
+.social-media i {
+  font-size: 2rem;
+    margin-left: 1rem;
+    color: #059cf9;
+}
+
+/* @media screen and (max-width: 992px){
+  
+} */
+
+
+/* @media screen and (max-width: 830px) {
+  .home-img {
+    display: none;
+} */
+  
+/* } */
+
+/* @media screen and (max-width: 576px) {
+  .home-img {
+    width: 19vw;
+  }
+  .home-content {
+    margin-top: 9rem;
+  }
+  .home-content h3 {
+    font-size: 1.6rem;
+    font-weight: 650;
+  }
+  .home-content h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .social-media a {
+    margin: 4rem 0.2rem 2rem 0;
+    transition: 0.5s ease;
+  }
+  .social-media i {
+    font-size: 1.4rem;
+  }
+} */
+
+/* @media screen and (max-width: 365px){
+  .home-content h1 {
+    font-size : 1.9rem;
+  }
+  .home-content h3 {
+  font-size: 1.2rem;
+}
+.social-media a {
+  margin: 2rem 0.2rem 2rem 0;
+}
+} */
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 834px){
+  .home-content {
+    padding: 100px 0px !important;
+}
+.home-content h3{
+  font-size: 12px;
+
+}
+.home-content h1{
+   font-size: 32px !important;
+}
+.home-content h3 {
+  font-size: 1.5rem;
+
+}
+.btnn {
+  padding: 1rem !important;
+  margin: 30px 42px 20px -8px !important;
+}
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 482px){
+  h1{
+    font-size: 22px !important;
+ }
+ h3{
+  font-size: 16px !important;
+
+}
+.about-container {
+  display: block;
+ 
+}
+.img-cont {
+  margin-left: 11rem;
+}
+.about-me {
+  width: 100%;
+  padding: 0 7rem;
+}
+.box {
+  display: block;
+}
+}
